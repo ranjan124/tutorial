@@ -2,11 +2,13 @@
 
 mat-sidenav-container {
   display: flex;
-  height: 100vh;
+  height: 98vh;
+  border: .1em solid $sv-blue-grey;
 }
 
 mat-sidenav {
   border: .1em solid $sv-blue-grey;
+  background: $sv-blue-grey-d1;
 }
 
 mat-sidenav-content {
