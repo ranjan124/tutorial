@@ -1,0 +1,15 @@
+@import '../styles/color';
+
+mat-sidenav-container {
+  display: flex;
+  height: 100vh;
+}
+
+mat-sidenav {
+  border: .1em solid $sv-blue-grey;
+}
+
+mat-sidenav-content {
+  flex: 1;
+  border: .1em solid $sv-blue-grey;
+}

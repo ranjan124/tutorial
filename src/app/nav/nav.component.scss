@@ -1,0 +1,25 @@
+@import '../../styles/color';
+
+.nav {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    display: block;
+    text-decoration: none;
+    background: $sv-blue-w1;
+    padding: 1em;
+
+    &:hover {
+      background: $sv-blue-a1;
+    }
+
+    &:active {
+      color: $sv-blue-grey;
+    }
+  }
+
+  .active-link {
+    background: $sv-orange-a1;
+  }
+}
