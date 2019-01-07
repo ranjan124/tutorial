@@ -5,6 +5,10 @@ import { ScsstutorialComponent } from './scsstutorial/scsstutorial.component';
 
 
 const routes: Routes = [
+  { path: '',
+    redirectTo: '/tuthtml',
+    pathMatch: 'full'
+  },
   { path: 'tuthtml', component: HtmltutorialComponent },
   { path: 'tutscss', component: ScsstutorialComponent }
 ];
