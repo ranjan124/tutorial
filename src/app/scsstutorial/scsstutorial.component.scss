@@ -1,0 +1,208 @@
+@import 'profile';
+
+$primery-colour: green;
+
+h1 {
+  color: $primery-colour;
+}
+
+p {
+  font-size: 25px;
+  color: rgb(202, 85, 85);
+}
+$bg-color: rgb(231, 142, 58);
+$hovor-color: rgb(144, 160, 85);
+$text-color: #ffffff;
+
+nav {
+  ul {
+    background-color: $bg-color;
+    margin: 1;
+    padding: 5;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: $text-color;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: #234d75;
+  }
+
+}
+
+p {
+  font-size: 24px;
+}
+
+.panel {
+  border: 10px solid rgb(25, 25, 112);
+  background: #df7b7b;
+  margin: 10px;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-webkit-border-radius: $radius;
+  -ms-webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.little-panel {
+  @extend .panel;
+  @include border-radius(5px);
+  font-size: 12px;
+  padding: 5px;
+}
+
+.big-panel {
+  @extend .panel;
+  @include border-radius(20px);
+  font-size: 32px;
+  padding: 5px;
+}
+$buttonBackground: rgb(25, 25, 112);
+$buttonColor: #df7b7b;
+$buttonPadding: 5px;
+
+.button {
+  background: $buttonBackground;
+  border-radius: 8px;
+  color: $buttonColor;
+  display: inline-block;
+  padding: $buttonPadding;
+  text-decoration: none;
+}
+
+.jumbo-button {
+  @extend .button;
+  padding: $buttonPadding + 30;
+}
+
+.light-button {
+  @extend .button;
+  background: $buttonBackground * 1.5;
+}
+
+.container {
+  margin: 40px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      border: 1px #df7b7b;
+    }
+
+    li {
+      margin: 30px 60px;
+      position: relative;
+
+    > span {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -60px;
+        width: 0;
+        height: 100%;
+        border: 1px #df7b7b;
+
+        &::before,
+        &::after {
+          content: '';
+          width: 10px;
+          height: 10px;
+          border: 2px solid #aaa;
+          position: absolute;
+          border-radius: 50%;
+          left: -7px;
+          background: #fff;
+        }
+
+        &::before {
+          top: -10px;
+        }
+
+        &::after {
+          top: 100%;
+        }
+      }
+
+      .time span{
+        position: absolute;
+        text-align: right;
+        font-size: 12px;
+        width: 30px;
+        left: -105px;
+        :first-child {
+          top: -12px;
+        }
+        :last-child {
+          left: -100px;
+          top: 100%;
+        }
+      }
+    }
+
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather Sans');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 50px;
+}
+.card {
+  width: 600px;
+  box-shadow: 0 0 15px rgba(0,0,0,.20);
+  display: flex;
+}
+
+.card__content {
+  padding: 100px 40px;
+}
+body {
+  font-size: 65.5%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../assets/paint.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: -webkit-linear-gradient(top, #000, gray);
+  background-image: -moz-linear-gradient(top, #000, gray);
+  background-image: -ms-linear-gradient(top, #000, gray);
+  background-image: -o-linear-gradient(top, #000, gray);
+  background-image: linear-gradient(top, #000, gray);
+
+}
+
+.wrapper {
+  font-size: 1.6em;
+  padding: 2em;
+  margin: 0 auto;
+  width: 900px;
+  height: 2000px;
+  background-color: #fff;
+}
