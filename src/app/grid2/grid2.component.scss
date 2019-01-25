@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(14, 207, 165);
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:silver;
+    display: flex;
+    li {
+      a {
+        display: block;
+        color: rgb(105, 73, 73);
+        text-align: l;
+        padding: 14px 16px;
+        text-decoration: none;
+
+        &:hover {
+          background-color: rgb(218, 211, 211);
+          color: rgb(44, 98, 180);
+        }
+      }
+    }
+  }
+}

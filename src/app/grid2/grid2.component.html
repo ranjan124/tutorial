@@ -1,3 +1,102 @@
-<p>
-  grid2 works!
-</p>
+<body  class="silver-background">
+  <link href="https://www.cats.org.uk/" rel="stylesheet" type="text/css">
+  <style>
+  div {
+  background-image: linear-gradient(white, green);
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+    .body-text {
+      color: rgb(43, 25, 25);
+      font-size: 20px;
+    }
+    .silver-background {
+      background-color: silver;
+    }
+    .thick-blue-border {
+      border-color: blue;
+      border-width: 10px;
+      border-style: solid;
+    }
+    .smaller-image {
+      width: 200px;
+    }
+    .text {
+      color: blueviolet;
+    }
+
+    h1 {
+      background-color: rgb(174, 248, 223);
+      font-family: 'Times New Roman', Times, serif;
+      border-color: green;
+      border-width: 5px;
+      border-style: groove;
+    }
+
+    p {
+      font-size: 15px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
+  <h1 class="text">Adopt Your Pet</h1>
+  <div>
+    <!-- Navigation -->
+    <nav class="main nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Cat Care</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <p class="text">Click here to view more <a href="#">Cat Photos</a>.</p>
+      <a href="#"><img class="smaller-image thick-blue-border" src="http://avante.biz/wp-content/uploads/Cat-Hd-Wallpaper/Cat-Hd-Wallpaper-025.jpg"></a>
+      <a href="#"><img class="smaller-image thick-blue-border" src="http://www.catbreedslist.com/cat-wallpapers/Persian-kitten-grass-white-2560x1600.jpg"></a>
+      <a href="#"><img class="smaller-image thick-blue-border" src="http://www.wallpapermania.eu/images/lthumbs/2015-03/7453_Little-golden-cat-and-the-fish-HD-wallpaper.jpg"></a>
+    </nav>
+  </div>
+  <div>
+    <p>Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+    </ul>
+  </div>
+
+  <form id="cat-photo-form" action="/Submit-cat-photo">
+    <label><input type="checkbox" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="checkbox" name="indoor-outdoor"> Indoor</label>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality" checked> Lazy</label>
+
+  </form>
+
+
+
+      <section class="contact">
+        <h2>Contact me</h2>
+        <form action="">
+          <label>Name:
+            <input type="text" id="name">
+          </label>
+
+          <label class="email">Email:
+            <input type="email" id="email">
+          </label>
+
+          <label class="message">Message:
+              <textarea name="" id="message"></textarea>
+            </label>
+        </form>
+      </section>
+      <footer>
+        <p>Follow me on social media</p>
+      </footer>
+
+</body>
